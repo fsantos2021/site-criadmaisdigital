@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Criad+ Digital</title>
+
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #6000c7;
+    }
+
+    .nav-links a {
+      margin-left: 25px;
+      text-decoration: none;
+      font-size: 1.05rem;
+      color: #444;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #6000c7;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(to right, #6000c7, #2575fc);
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto 25px;
+    }
+
+    .hero .btn {
+      background: #fff;
+      color: #6000c7;
+      padding: 12px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .hero .btn:hover {
+      background: #f0f0f0;
+    }
+
+    /* BANNER DIA DAS MÃES */
+    .banner-maes {
+      position: relative;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    .banner-maes img {
+      width: 100%;
+      display: block;
+    }
+
+    .btn-mae {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #e6007e;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.1rem;
+      padding: 12px 30px;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: 0.3s ease;
+    }
+
+    .btn-mae:hover {
+      background-color: #c4006c;
+    }
+
+    /* SOBRE */
+    .sobre {
+      background: linear-gradient(to bottom, #f8f8ff, #ffffff);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .sobre h2 {
+      color: #6000c7;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .sobre p {
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    /* MVV */
+    .mvv {
+      background: linear-gradient(to bottom, #ffffff, #f0f0ff);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .mvv h2 {
+      color: #6000c7;
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .mvv-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .mvv-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+      padding: 25px;
+      flex: 1 1 280px;
+      max-width: 350px;
+      text-align: left;
+    }
+
+    .mvv-card h3 {
+      color: #6000c7;
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    .mvv-card p, .mvv-card ul {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .mvv-card ul {
+      padding-left: 20px;
+      list-style: none;
+    }
+
+    .mvv-card ul li::before {
+      content: "✔ ";
+      color: #6000c7;
+      font-weight: bold;
+    }
+
+    /* RODAPÉ */
+    footer {
+      background-color: #6000c7;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .mvv-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .btn-mae {
+        bottom: 20px;
+        font-size: 1rem;
+        padding: 10px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">Criad+ Digital</div>
+  <nav class="nav-links">
+    <a href="#">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#mvv">Nossa Essência</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Estamos de cara nova!</h1>
+  <p>Mudamos de <strong>Criad+ Personalizados</strong> para <strong>Criad+ Digital</strong> e estamos prontos para uma nova fase com você!</p>
+  <a href="produtos.html" class="btn">Conheça nossos produtos</a>
+</section>
+
+<!-- BANNER MÃES -->
+<section class="banner-maes">
+  <img src="img/banner-dia-das-maes.png" alt="Banner Dia das Mães" />
+  <a href="produtos.html" class="btn-mae">Presenteie sua mãe</a>
+</section>
+
+<!-- SOBRE -->
+<section class="sobre" id="sobre">
+  <h2>Sobre a Criad+ Digital</h2>
+  <p>
+    Na <strong>Criad+ Digital</strong>, qualidade não é um diferencial — é uma obrigação. Cada produto é desenvolvido com dedicação e cuidado para oferecer uma experiência que vá além do esperado.
+    Criamos mais que objetos personalizados: criamos lembranças, emoções e presentes que conectam. Combinamos tecnologia, inovação e um atendimento verdadeiramente humano para entregar o que há de melhor em personalização.
+  </p>
+</section>
+
+<!-- MISSÃO, VISÃO E VALORES -->
+<section class="mvv" id="mvv">
+  <h2>Nossa Essência</h2>
+  <div class="mvv-cards">
+    <div class="mvv-card">
+      <h3>Missão</h3>
+      <p>
+        Criar experiências únicas por meio de produtos personalizados com qualidade superior, inovação e um atendimento humano e inspirador. Buscamos encantar e superar expectativas em cada detalhe.
+      </p>
+    </div>
+    <div class="mvv-card">
+      <h3>Visão</h3>
+      <p>
+        Ser referência nacional no mercado de presentes e produtos personalizados, reconhecida pela criatividade, excelência, inovação e conexão emocional com nossos clientes.
+      </p>
+    </div>
+    <div class="mvv-card">
+      <h3>Valores</h3>
+      <ul>
+        <li>Qualidade como compromisso</li>
+        <li>Atendimento humano e empático</li>
+        <li>Inovação constante com tecnologia</li>
+        <li>Criatividade com propósito</li>
+        <li>Satisfação e encantamento do cliente</li>
+        <li>Ética, respeito e transparência</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- RODAPÉ -->
+<footer id="contato">
+  <p>&copy; 2025 Criad+ Digital - Todos os direitos reservados.</p>
+  <p>Siga-nos no <a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+</footer>
+
+</body>
+</html>
